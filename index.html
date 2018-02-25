@@ -6,41 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <container>
-        <header>
-            <h1>
-                Crystals Collector!
-            </h1>
-        </header>
-        <section>
-            <p>
-                This will contain the information necessary to explain and play the game!
-            </p>
-        </section>
-        <aside>
-            <p>
-                This will contain the randomly chosen number!
-            </p>
-        </aside>
-        <score>
-            <p>
-                This will keep track of the score (wins/losses)
-            </p>
-        </score>
-        <buttons>
-            <p>
-                This will contain the buttons that will have randomly chosen numbers assigned to them!
-            </p>
-        </buttons>
-        <buttonscore>
-            <p>
-                This will contain the number created by clicking on the buttons!
-            </p>
-        </buttonscore>
-    </container>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <header>
+                    <h1>
+                        Crystals Collector!
+                    </h1>
+                </header>
+                <section>
+                    <p>
+                        This will contain the information necessary to explain and play the game!
+                    </p>
+                </section>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-m-8">
+                                <div class="aside">
+                                    <p>
+                                        This will contain the randomly chosen number!
+                                    </p>
+                                </aside>
+                            </div>
+                                <div class="col-m-4">
+                                    <div class=score>
+                                        <p>
+                                            This will keep track of the score (wins/losses)
+                                        </p>
+                                    </score>
+                                </div>
+                        </div>
+                    </div>
+                <div class=buttons>
+                    <div class="container-fluid">
+                        <div class=row>
+                            <div class="col-lg-12">
+                                <div class="col-m-3" style="background-color:blue">
+                                    <img src="assets/images/crystal.png" class="img-circle" alt="crystals aren't medicine">
+                                </div>
+                                <div class="col-m-3">
+                                    <img src="assets/images/blah.png" class="img-circle" alt="can't heal jack">
+                                </div>
+                                <div class="col-m-3">
+                                    <img src="assets/images/Kinetic_Crystal.png" class="img-circle" alt="chakras are bs">
+                                </div>
+                                <div class="col-m-3">
+                                    <img src="assets/images/blahblah.png" class="img-circle" alt="evidence plz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=buttonscore>
+                    <p>
+                        This will contain the number created by clicking on the buttons!
+                    </p>
+                </buttonscore>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
