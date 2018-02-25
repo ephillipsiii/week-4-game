@@ -5,6 +5,7 @@ var losses = 0;
 var buttonNumber = [];
 var score = 0;
 var button1, button2, button3, button4;
+var currentGuess
 
 var randomNumber = Math.floor(Math.random() * 101) + 19;
 
