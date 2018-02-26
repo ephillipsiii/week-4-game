@@ -26,29 +26,28 @@ $( document ).ready(function(){
         currentGuess = currentGuess + button1;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
-        console.log(wins);
+        evalCurrentGuess();
     });
     $("#button2").click(function(){
         currentGuess = currentGuess + button2;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
-        console.log(wins);
+        evalCurrentGuess();
     });
     $("#button3").click(function(){
         currentGuess = currentGuess + button3;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
         console.log(wins);
+        evalCurrentGuess();
     });
     $("#button4").click(function(){
         currentGuess = currentGuess + button4;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
-        console.log(wins);
         evalCurrentGuess();
-     
-
-
+    
+    }); 
     //determine wins and losses, update screen accordingly
     function evalCurrentGuess(){
         if (currentGuess === randomNumber){
@@ -56,17 +55,18 @@ $( document ).ready(function(){
             $(".wins").html(wins);
             $(".currentGuess").html("");
             currentGuess = 0;
+            randomNumber = Math.floor(Math.random() * 101) + 19;
+            $(".targetScore").html(randomNumber);
         } else if (currentGuess > randomNumber) {
             losses++;
             $(".losses").html(losses);
             $(".currentGuess").html("");
             currentGuess = 0;
+            randomNumber = Math.floor(Math.random() * 101) + 19;
+            $(".targetScore").html(randomNumber);
         }
-        console.log(wins);
-        console.log(losses);
     }
 }); 
-});
         
 
 
