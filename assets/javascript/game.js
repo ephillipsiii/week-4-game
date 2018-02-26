@@ -10,6 +10,7 @@ $( document ).ready(function(){
     //set initial numbers
     randomNumber = Math.floor(Math.random() * 101) + 19;
     $(".targetScore").append(randomNumber);
+    //don't think I need the lines below, but I'm trying to use them as a reference for updating wins/losses
     // $("#wins").append(wins);
     // $("#losses").append(losses);
     // $("#score").append(currentGuess);
@@ -44,17 +45,22 @@ $( document ).ready(function(){
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
         console.log(wins);
-    });
+    
 
 
     //determine wins and losses, update screen accordingly
     if (currentGuess === randomNumber){
         wins++;
-        $("#wins").appendTo(wins);
+        $(".wins").html(wins);
         
         };
         console.log(wins);
+    // else if (currentGuess >= randomNumber){
+    //     losses++;
+    //     $(".losses").html(losses);
+    //     }
     });
+});
         
 
 
