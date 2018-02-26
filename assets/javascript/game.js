@@ -45,21 +45,27 @@ $( document ).ready(function(){
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
         console.log(wins);
-    
+        evalCurrentGuess();
+     
 
 
     //determine wins and losses, update screen accordingly
-    if (currentGuess === randomNumber){
-        wins++;
-        $(".wins").html(wins);
-        
-        };
+    function evalCurrentGuess(){
+        if (currentGuess === randomNumber){
+            wins++;
+            $(".wins").html(wins);
+            $(".currentGuess").html("");
+            currentGuess = 0;
+        } else if (currentGuess > randomNumber) {
+            losses++;
+            $(".losses").html(losses);
+            $(".currentGuess").html("");
+            currentGuess = 0;
+        }
         console.log(wins);
-    // else if (currentGuess >= randomNumber){
-    //     losses++;
-    //     $(".losses").html(losses);
-    //     }
-    });
+        console.log(losses);
+    }
+}); 
 });
         
 
