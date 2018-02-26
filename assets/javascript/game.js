@@ -2,7 +2,7 @@
 $( document ).ready(function(){
     var wins = 0;
     var losses = 0;
-    var buttonNumber = [];
+    
     var score = 0;
     var button1, button2, button3, button4;
     var currentGuess = 0;
@@ -10,9 +10,9 @@ $( document ).ready(function(){
     //set initial numbers
     randomNumber = Math.floor(Math.random() * 101) + 19;
     $(".targetScore").append(randomNumber);
-    $("#wins").append(wins);
-    $("#losses").append(losses);
-    $("#score").append(currentGuess);
+    // $("#wins").append(wins);
+    // $("#losses").append(losses);
+    // $("#score").append(currentGuess);
     //buttons 
     button1 = Math.floor(Math.random() * 12) + 1;
     button2 = Math.floor(Math.random() * 12) + 1;
@@ -25,27 +25,38 @@ $( document ).ready(function(){
         currentGuess = currentGuess + button1;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
+        console.log(wins);
     });
     $("#button2").click(function(){
         currentGuess = currentGuess + button2;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
+        console.log(wins);
     });
     $("#button3").click(function(){
         currentGuess = currentGuess + button3;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
+        console.log(wins);
     });
     $("#button4").click(function(){
         currentGuess = currentGuess + button4;
         console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
+        console.log(wins);
     });
 
 
+    //determine wins and losses, update screen accordingly
+    if (currentGuess === randomNumber){
+        wins++;
+        $("#wins").appendTo(wins);
+        
+        };
+        console.log(wins);
+    });
+        
 
-}
-);
 
     
 

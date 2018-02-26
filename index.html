@@ -6,57 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="header">
-            <h1>
-                Crystals Collector!
-            </h1>
-        </div>
-        <div class="instructions">
-            <p>
-                This will contain the information necessary to explain and play the game!
-            </p>
-        </div>
-        <div class="targetScore">
-            <h3>
-                Number to Guess:
-            </h3>
-            <div id="randomNumber">
-            </div>
-        </div>
-        <div class="totals">
-            <h3>Wins:
-                <div id="wins">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="header">
+                    <h1>
+                        Crystals Collector!
+                    </h1>
                 </div>
-            </h3>
-            <h3>Losses:
-                <div id="losses">
+                <div class="instructions">
+                   <ul>
+                       <ul>A random number will be chosen
+                       </ul>
+                       <ul>A random number will be assigned to each crystal
+                       </ul>
+                       <ul>Click a crystal to increase your guess
+                       </ul>
+                       <ul>Victory is achieved by matching your guess with the randomly chosen number
+                       </ul>
+                    </ul>
                 </div>
-            </h3>
-            <h3>
-                <div id="win-lose-message">
-
-                </div>
-            </h3>
-        </div>
-        <div class="buttons">
-            <img src="assets/images/blah.png" class=buttonPic id="button1" alt="b1">
-            <img src="assets/images/blahblah.png" class=buttonPic id="button2" alt="b2">
-            <img src="assets/images/crystal.png" class=buttonPic id="button3" alt="b3">
-            <img src="assets/images/Kinetic_Crystal.png" class=buttonPic id="button4" alt="b4">
-        </div>
-        <div class="buttonscore">
-            <div id="score">
-                <h3>Your current guess:
-                    <div class="currentGuess">
-
+                <div class="targetScore">
+                    <h3>
+                        Number to Guess:
+                    </h3>
+                    <div id="randomNumber">
                     </div>
-                </h3>
-            </div>
+                </div>
+                <div class="totals">
+                    <h3>Wins:
+                        <div id="wins">
+                        </div>
+                    </h3>
+                    <h3>Losses:
+                        <div id="losses">
+                        </div>
+                    </h3>
+                    <h3>
+                        <div id="win-lose-message">
+
+                        </div>
+                    </h3>
+                </div>
+                <div class="buttons">
+                    <img src="assets/images/blah.png" class=buttonPic id="button1" alt="b1">
+                    <img src="assets/images/blahblah.png" class=buttonPic id="button2" alt="b2">
+                    <img src="assets/images/crystal.png" class=buttonPic id="button3" alt="b3">
+                    <img src="assets/images/Kinetic_Crystal.png" class=buttonPic id="button4" alt="b4">
+                </div>
+                <div class="buttonscore">
+                    <div id="score">
+                        <h3>Your current guess:
+                            <div class="currentGuess">
+
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+            </div> 
         </div>
     </container>
     
