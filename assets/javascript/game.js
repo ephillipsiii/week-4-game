@@ -24,13 +24,11 @@ $( document ).ready(function(){
     // detects clicks on the buttons, adds the numbers and edits to the screen
     $("#button1").click(function(){
         currentGuess = currentGuess + button1;
-        console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
         evalCurrentGuess();
     });
     $("#button2").click(function(){
         currentGuess = currentGuess + button2;
-        console.log(currentGuess);
         $(".currentGuess").html(currentGuess);
         evalCurrentGuess();
     });
@@ -54,6 +52,7 @@ $( document ).ready(function(){
             wins++;
             $(".wins").html(wins);
             $(".currentGuess").html("");
+            alert("You Win!");
             currentGuess = 0;
             randomNumber = Math.floor(Math.random() * 101) + 19;
             $(".targetScore").html(randomNumber);
@@ -61,6 +60,7 @@ $( document ).ready(function(){
             losses++;
             $(".losses").html(losses);
             $(".currentGuess").html("");
+            alert("You Lose!");
             currentGuess = 0;
             randomNumber = Math.floor(Math.random() * 101) + 19;
             $(".targetScore").html(randomNumber);
